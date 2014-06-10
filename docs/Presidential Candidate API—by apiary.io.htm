@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/conversion.js" async=""></script><script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/analytics.js" async=""></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Presidential Candidate API—by apiary.io</title>
+    <meta name="description" content="a place where APIs are kept">
+  <meta name="author" content="apiary.io">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  <link rel="shortcut icon" href="https://apiary.a.ssl.fastly.net/assets/icons/favicon-aa8fc5808796304b.ico">
+  <link rel="apple-touch-icon-precomposed" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-precomposed-16cb9301e5cd0912.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-72x72-precomposed-88b45e069ad376bd.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-114x114-precomposed-166416e5d92f4c45.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-144x144-precomposed-54504235b83a48b2.png">
+
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/normalize-c1a6015040ef1201.css">
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/font-awesome-b2431b0e6805305e.css" media="screen, presentation, print">
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/docs-b8ad3a4db9c43a86.css" media="screen, presentation">
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/head-foot-cdb0c8eb0e591a64.css" media="screen, presentation">
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/multi-ac53b26aef3f90c2.css" media="screen, presentation">
+
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/sign-in-sign-up-fa7f0d87430e8def.css" media="screen, presentation">
+
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/print-8c2a2b1510499b5a.css" media="print">
+
+  <link rel="stylesheet" href="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/prism-ac8b50ad63b3f96b.css" media="screen, presentation">
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/prism-f0938f33defadce9.js" data-manual=""></script>
+
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/jquery-1.js"></script>
+
+</head>
+
+<body class="themeDark">
+
+<div id="container">
+
+
+  
+
+<header class="fullSize"><div class="apiaryMenu"><div class="wholeMenu menuRow">
+
+  <div role="banner" class="apiaryLogo menuCell"><a class="absFg" title="Apiary Ltd." href="http://apiary.io/"><span class="visuallyhidden">Apiary</span></a></div>
+
+    <hgroup class="menuCell apiNameCell">
+    <div class="apiSwitchName">
+      <div class="apiSwitcher">
+                          <div class="apiLines vIcoHover">
+        <h1 class="apiName oneLiner" title="Presidential Candidate API"><span class="ellipsis">Presidential Candidate API</span></h1>
+            </div>
+        </div>
+    </div>
+  </hgroup>
+  
+<!-- shared for unknown-guest / logged-in user -->
+
+  <nav class="apiMenu menuCell">    <ul class="apiMenuList apiMenuTexts">
+      <li class="apiMenuItem">
+        <a id="docLink" href="http://docs.calonpresidenapi.apiary.io/" class="selected">Documentation</a>
+      </li>
+      <li class="apiMenuItem">
+                  <a id="trafficLink" href="http://docs.calonpresidenapi.apiary.io/traffic">Traffic Inspector</a>
+              </li>
+          </ul>
+  </nav>
+
+  
+
+  <div class="menuCell flexibleSpace"></div>
+
+      <div class="secondaryNav menuCell dualLine">
+      <div class="switcherToggle">
+        <h2 class="poweredByApiary">Apiary Powered Documentation</h2>
+        <p class="headSignInLinks">
+          <a href="https://login.apiary.io/login?redirect=http%3A%2F%2Fdocs.calonpresidenapi.apiary.io%2F">Sign in</a> with Apiary account
+        </p>
+      </div>
+    </div>
+  
+</div></div></header>
+
+
+
+
+<div id="documentationContainer">
+
+    <div id="rightColumn">
+              <p class="title">Table of Contents</p>
+        <ul id="toc">
+                      <li><a href="#candidates">Candidates</a></li>
+                      <li><a href="#events">Events</a></li>
+                      <li><a href="#promises">Promises</a></li>
+                      <li><a href="#videos">Videos</a></li>
+                  </ul>
+            <div id="endpoints">
+        <ul>
+                      <p class="title">API</p>
+            <input name="real-api" value="http://api.pemiluapi.org/calonpresiden/api/" readonly="readonly" id="real-api" tabindex="1" type="text">
+                                              <p class="title">Mock Server</p>
+              <input name="mock-api" value="http://calonpresidenapi.apiary-mock.com" readonly="readonly" id="mock-api" tabindex="2" type="text">
+              <p>Use this URL to access a mockup of the API server. Your
+ traffic will be recorded and compared to the documentation. You'll find
+ your traffic analysis in the <a href="http://docs.calonpresidenapi.apiary.io/traffic">inspector</a> or directly here in the documentation, right next to each resource.</p>
+                              </ul>
+      </div>
+    </div>
+
+<script>window.docResources = {};</script>
+
+<div class="rawExample" id="leftColumn">
+  <h1 id="apiHeadline">Presidential Candidate API</h1>
+
+  <div class="details"><p>The Presidential Candidate API is a service 
+that provides information about candidates running for president and 
+vice-president in the 2014 Indonesian elections. It's part of <a href="http://developer.pemiluapi.org/">API Pemilu</a></p>
+
+<p>Sample calls:</p>
+
+<h1><a href="#candidates">Candidates</a></h1>
+
+<p><strong>List all candidates</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/caleg?apiKey=fea6f7d9ec0b31e256a673114792cb17">http://api.pemiluapi.org/calonpresiden/api/caleg?apiKey=fea6f7d9ec0b31e256a673114792cb17</a></p>
+
+<p><strong>Get a single candidate's information</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/caleg/jk?apiKey=fea6f7d9ec0b31e256a673114792cb17">http://api.pemiluapi.org/calonpresiden/api/caleg/jk?apiKey=fea6f7d9ec0b31e256a673114792cb17</a></p>
+
+<h1><a href="#events">Events</a></h1>
+
+<p><strong>Get a list of events candidates will attend, from today forward</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/events?apiKey=fea6f7d9ec0b31e256a673114792cb17">http://api.pemiluapi.org/calonpresiden/api/events?apiKey=fea6f7d9ec0b31e256a673114792cb17</a></p>
+
+<p><strong>Get a list of events one candidate attended between two dates</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/events?apiKey=fea6f7d9ec0b31e256a673114792cb17&amp;id_calon=ps&amp;after=2014-04-20&amp;before=2014-04-29">http://api.pemiluapi.org/calonpresiden/api/events?apiKey=fea6f7d9ec0b31e256a673114792cb17&amp;id_calon=ps&amp;after=2014-04-20&amp;before=2014-04-29</a></p>
+
+<h1><a href="#promises">Promises</a></h1>
+
+<p><strong>Get a list of promises candidates have made</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/promises?apiKey=fea6f7d9ec0b31e256a673114792cb17">http://api.pemiluapi.org/calonpresiden/api/promises?apiKey=fea6f7d9ec0b31e256a673114792cb17</a></p>
+
+<p><strong>Get a list of promises one candidate has made</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/promises?apiKey=fea6f7d9ec0b31e256a673114792cb17&amp;id_calon=jw">http://api.pemiluapi.org/calonpresiden/api/promises?apiKey=fea6f7d9ec0b31e256a673114792cb17&amp;id_calon=jw</a></p>
+
+<h1><a href="#videos">Videos</a></h1>
+
+<p><strong>Get a list of candidate videos</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/videos?apiKey=fea6f7d9ec0b31e256a673114792cb17">http://api.pemiluapi.org/calonpresiden/api/videos?apiKey=fea6f7d9ec0b31e256a673114792cb17</a></p>
+
+<p><strong>Get all videos with a certain tag</strong></p>
+
+<p><a href="http://api.pemiluapi.org/calonpresiden/api/videos?apiKey=fea6f7d9ec0b31e256a673114792cb17&amp;tags=debat">http://api.pemiluapi.org/calonpresiden/api/videos?apiKey=fea6f7d9ec0b31e256a673114792cb17&amp;tags=debat</a></p></div>
+        <a name="candidates"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Candidates</h1>          <div class="details"><p>Candidates related resources of the <strong>Presidential Candidate API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Candidates Collection</h2>                      <div class="descriptionMethod"><p>A list of Candidates objects with all its details</p></div>
+                  
+                  <h3 class="nameMethod">List Candidates</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/caleg?apiKey={apiKey}&amp;tahun={tahun}&amp;jenis_kelamin={jenis_kelamin}&amp;agama={agama}&amp;partai={partai}&amp;nama={nama}&amp;limit={limit}&amp;offset={offset}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fcaleg%3FapiKey%3D%7BapiKey%7D%26tahun%3D%7Btahun%7D%26jenis_kelamin%3D%7Bjenis_kelamin%7D%26agama%3D%7Bagama%7D%26partai%3D%7Bpartai%7D%26nama%3D%7Bnama%7D%26limit%3D%7Blimit%7D%26offset%3D%7Boffset%7D" name="get-/calonpresiden/api/caleg?apiKey={apiKey}&amp;tahun={tahun}&amp;jenis_kelamin={jenis_kelamin}&amp;agama={agama}&amp;partai={partai}&amp;nama={nama}&amp;limit={limit}&amp;offset={offset}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink"><em>3</em> <i class="icon-comment"></i></a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>offset</td>
+                      <td><p>Number the offset from the beginning of the list of records to return (use in combination with <code>limit</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>300</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>limit</td>
+                      <td><p>Number the number of records to return (use in combination with <code>offset</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>25</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>nama</td>
+                      <td><p>String full or partial <code>nama</code> (name) of the candidate. Will return all matching records.</p>
+</td>
+                      <td>string, optional<br>example: <samp>afzal</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>partai</td>
+                      <td><p>String id of the <code>partai</code> (party) that the candidate is a member of</p>
+</td>
+                      <td>string, optional<br>example: <samp>1</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>agama</td>
+                      <td><p>String full or partial <code>agama</code> (religion) of the candidate. Will return all matching records.</p>
+</td>
+                      <td>string, optional<br>example: <samp>islam</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>jenis_kelamin</td>
+                      <td><p>String <code>jenis_kelamin</code> (gender) of the candidate.</p>
+</td>
+                      <td>string, optional<br>example: <samp>L</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>tahun</td>
+                      <td><p>Number <code>tahun</code> (election year) that the candidate is running for.</p>
+</td>
+                      <td>number, optional<br>example: <samp>2014</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS1E1">                                                      <script>
+window.docResources["generatedResourceCodeS1E1"] = (window.docResources["generatedResourceCodeS1E1"] || []).concat({
+  "url": "/calonpresiden/api/caleg?apiKey={apiKey}\u0026tahun={tahun}\u0026jenis_kelamin={jenis_kelamin}\u0026agama={agama}\u0026partai={partai}\u0026nama={nama}\u0026limit={limit}\u0026offset={offset}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "offset": 300,
+    "limit": 25,
+    "nama": "afzal",
+    "partai": "1",
+    "agama": "islam",
+    "jenis_kelamin": "L",
+    "tahun": 2014,
+    "apiKey": "06ec082d057daa3d310b27483cc3962e"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 2,
+        "total": 2,
+        "caleg": [{
+            "id": "jw",
+            "tahun": 2014,
+            "nama": "Joko Widodo",
+            "role": "capres"
+            "id_running_mate": "jk"
+            "jenis_kelamin": "L",
+            "agama": "Islam",
+            "tempat_lahir": "Surakarta",
+            "tanggal_lahir": "1961-06-21",
+            "status_perkawinan": "Kawin",
+            "nama_pasangan": "Hj. Iriana, SE., MM.",
+            "jumlah_anak": "3",
+            "kelurahan_tinggal": "",
+            "kecamatan_tinggal": "",
+            "kab_kota_tinggal": "Jakarta Pusat",
+            "provinsi_tinggal": "DKI Jakarta",
+            "partai": {
+                "id": 4,
+                "nama": "Partai Demokrasi Indonesia"
+            },
+            "biografi": "Joko Widodo atau Jokowi (lahir di Surakarta, Jawa Tengah, 21 Juni 1961; umur 52 tahun) adalah politikus Indonesia dan Gubernur DKI Jakarta. Ia adalah mantan Wali Kota Surakarta (Solo) dari tahun 2005 sampai 2012. Dua tahun sementara menjalani periode keduanya di Solo, Jokowi ditunjuk oleh partainya,Partai Demokrasi Indonesia Perjuangan (PDIP) untuk memasuki pemilihan Gubernur DKI Jakarta bersama dengan Basuki Tjahaja Purnama (Ahok).\n\nWalaupun pada masa kecilnya pernah tergusur sebanyak tiga kali, ia mampu diterima di Fakultas Kehutanan Universitas Gajah Mada dan setelah lulus berhasil menjadi pengusaha furnitur. Setelah itu, karier politiknya dimulai dengan menjadi Wali Kota Surakarta pada tahun 2005. Kemudian, pada tahun 2012, ia dicalonkan oleh PDI-P sebagai calon Gubernur DKI Jakarta.\n\nPada tanggal 20 September 2012, Jokowi berhasil memenangkan Pilkada Jakarta 2012, dan kemenangannya dianggap mencerminkan dukungan populer untuk seorang pemimpin yang ""baru"" dan ""bersih"", meskipun umurnya sudah lebih dari lima puluh tahun. Ia akan menjabat selama lima tahun dan berakhir pada tahun 2017. Selama menjabat sebagai gubernur, ia melancarkan berbagai program seperti Kartu Jakarta Sehat, Kartu Jakarta Pintar, lelang jabatan, pembangunan Angkutan Massal Cepat (MRT) dan Monorel, pengembalian fungsi waduk dan sungai, serta penyediaan ruang terbuka hijau.\n\nSemenjak terpilih sebagai gubernur, popularitasnya melambung tinggi dan ia terus menjadi sorotan media. Akibatnya, muncul wacana untuk menjadikannya calon presiden untuk pemilihan umum presiden Indonesia 2014. Ditambah lagi, hasil survei menunjukkan bahwa nama Jokowi terus diunggulkan. Pada awalnya, Ketua Umum PDI-P, Megawati Soekarnoputri menyatakan bahwa ia tidak akan mengumumkan Calon Presiden PDI-P sampai setelah pemilihan umum legislatif 9 April 2014. Namun, pada tanggal 14 Maret 2014, Jokowi telah menerima mandat dari Megawati untuk maju sebagai calon presiden dari PDI-P, tiga minggu sebelum pemilihan umum legislatif dan dua hari sebelum kampanye.",
+            "riwayat_pendidikan": [
+                {
+                    "id": 1,
+                    "ringkasan": "SDN III Tirtoyoso Solo",
+                    "tanggal_mulai": "",
+                    "tanggal_selesai": ""
+                },
+                {
+                    "id": 2,
+                    "ringkasan": "SMPN I Solo",
+                    "tanggal_mulai": "",
+                    "tanggal_selesai": ""
+                }
+            ],
+            "riwayat_pekerjaan": [
+                {
+                    "id": 3,
+                    "ringkasan": "Eksportir Mebel",
+                    "tanggal_mulai": "",
+                    "tanggal_selesai": ""
+                },
+                {
+                    "id": 4,
+                    "ringkasan": "Walikota Surakarta",
+                    "tanggal_mulai": "2005",
+                    "tanggal_selesai": "2010"
+                }
+            ],
+            "riwayat_organisasi": [
+                {
+                    "id": 5,
+                    "ringkasan": "Bidang Pertambangan dan energi KADIN Surakarta",
+                    "jabatan": "Ketua",
+                    "tanggal_mulai": "1992",
+                    "tanggal_selesai": "1996"
+                }, {
+                    "id": 6,
+                    "ringkasan": "ASMINDO Komda Surakarta",
+                    "jabatan": "Ketua",
+                    "tanggal_mulai": "2002",
+                    "tanggal_selesai": "2007"
+                }
+            ],
+            "riwayat_penghargaan": [
+                {
+                    "id": 7,
+                    "ringkasan": "Satya Bhakti",
+                    "institusi": "Kadin Jawa Tengah",
+                    "tanggal": "2007"
+                }, {
+                    "id": 8,
+                    "ringkasan": "Solo Pos Award",
+                    "institusi": "Solo Pos",
+                    "tanggal": "2007"
+                }
+            ]
+        }, {
+            "id": "ps",
+            "tahun": 2014,
+            "nama": "Prabowo Subianto",
+            "role": "capres"
+            "id_running_mate": "hr"
+            "jenis_kelamin": "L",
+            "agama": "ISLAM",
+            "tempat_lahir": "Jakarta",
+            "tanggal_lahir": "1951-06-17",
+            "status_perkawinan": "Cerai",
+            "nama_pasangan": "",
+            "jumlah_anak": "1",
+            "kelurahan_tinggal": "Desa Bojongkoneng",
+            "kecamatan_tinggal": "Babakan Madang",
+            "kab_kota_tinggal": "Bogor",
+            "provinsi_tinggal": "Jawa Barat",
+            "partai": {
+                "id": 6,
+                "nama": "Partai Gerakan Indonesia"
+            },
+            "biografi": "Letnan Jenderal TNI (Purn.) Prabowo Subianto Djojohadikusumo (lahir diJakarta, 17 Oktober 1951; umur 62 tahun) adalah seorang pengusaha, politisi, dan mantan perwira TNI Angkatan Darat. Ia menempuh pendidikan dan jenjang karier militer selama 28 tahun sebelum berkecimpung dalam bisnis dan politik. Bersama Hatta Rajasa, ia maju sebagai calon Presiden Indonesia ke-7 dalam pemilihan umum presiden Indonesia 2014.\n\nLahir di Jakarta, masa kecil Prabowo putra begawan ekonomi Soemitro Djojohadikoesoemo banyak dilewatkan di luar negeri bersama orangtuanya. Minatnya pada dunia militer dipengaruhi figur paman Soebianto Djojohadikusumo yang gugur dalam Pertempuran Lengkong 1946. Keluar sebagai lulusan terbaik Akademi Militer tahun 1974, Prabowo mencatatkan diri sebagai komandan termuda saat mengikuti operasi Tim Nanggala di Timor Timur. Kariernya melejit setelah menjabat Wakil Detasemen Penanggulangan Teror Komando Pasukan Khusus (Kopassus) pada 1983. Merengkuh jabatan Komandan Kopassus pada 1995, selang setahun ia dipromosikan sebagaiKomandan Jenderal Kopasus, memimpin operasi pembebasan sandera Mapenduma. Terakhir, ia bertugas sebagai Panglima Kostrad dua bulan sampai kejatuhan Presiden Soeharto pada Mei 1998.\n\nSetelah tidak aktif dalam dinas militer, Prabowo menghabiskan waktu di Yordania dan beberapa negera Eropa. Ia menekuni dunia bisnis, mengikuti adiknya Hashim Djojohadikusumo yang pengusaha minyak. Bisnis Prabo meliputi sedikitnya 27 perusahaan yang bergerak di sektor berbeda. Kembali ke Tanah Air, ia berkecimpung dalam politik. Pada 2008, ia bersama rekannya mengukuhkan pembentukan Partai Gerakan Indonesia Raya. Lewat jalur perhimpunan, Prabowo merangkul petani, pedagang pasar tradisional, dan kegiatan pencak silat Indonesia. Selama dua periode, ia memimpin Himpunan Kerukunan Tani Indonesia (HKTI) sejak 2004.",
+            "riwayat_pendidikan": [
+                {
+                    "id": 7,
+                    "ringkasan": "SD Victoria Institution, Kuala Lumpur",
+                    "tanggal_mulai": "1960",
+                    "tanggal_selesai": "1963"
+                },
+                {
+                    "id": 8,
+                    "ringkasan": "SMP International School, Zurich",
+                    "tanggal_mulai": "1963",
+                    "tanggal_selesai": "1964"
+                }
+            ],
+            "riwayat_pekerjaan": [
+                {
+                    "id": 9,
+                    "ringkasan": "Komandan Peleton Para Komando Group-1 Kopassandha",
+                    "tanggal_mulai": "1976",
+                    "tanggal_selesai": "1976"
+                },
+                {
+                    "id": 10,
+                    "ringkasan": "Komandan Kompi Para Komando Group-1 Kopassandha",
+                    "tanggal_mulai": "1977",
+                    "tanggal_selesai": "1977"
+                }
+            ],
+            "riwayat_organisasi": [
+                {
+                    "id": 11,
+                    "ringkasan": "Ketua Umum Dewan Mesjid Indonesia",
+                    "jabatan": "Ketua",
+                    "tanggal_mulai": "2010",
+                    "tanggal_selesai": "2014"
+                }, {
+                    "id": 12,
+                    "ringkasan": "Ketua Umum Palang Merah Indonesia",
+                    "jabatan": "Ketua",
+                    "tanggal_mulai": "2009",
+                    "tanggal_selesai": "2014"
+                }
+            ],
+            "riwayat_penghargaan": [
+                {
+                    "id": 13,
+                    "ringkasan": "Bintang Kartika Eka Paksi Nararya",
+                    "institusi": "Tentara Nasional Indonesia (TNI) Angkatan Darat Republik Indonesia",
+                    "tanggal": ""
+                }, {
+                    "id": 14,
+                    "ringkasan": "Bintang Yudha Dharma Nararya",
+                    "institusi": "Tentara Nasional Indonesia (TNI) Angkatan Darat Republik Indonesia",
+                    "tanggal": ""
+                }
+            ]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/caleg?apiKey={apiKey}&amp;tahun={tahun}&amp;jenis_kelamin={jenis_kelamin}&amp;agama={agama}&amp;partai={partai}&amp;nama={nama}&amp;limit={limit}&amp;offset={offset}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/caleg?apiKey={apiKey}&amp;tahun={tahun}&amp;jenis_kelamin={jenis_kelamin}&amp;agama={agama}&amp;partai={partai}&amp;nama={nama}&amp;limit={limit}&amp;offset={offset}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                                                                <article>
+  <ol class="thread">
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/empty-20a1fa375f6a610c.png" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">busel7 </span> <span class="datetime">11 hours ago</span></h1>
+                <p><a href="http://api.pemiluapi.org/calonpresiden/api/caleg?apiKey=fea6f7d9ec0b31e256a673114792cb17">http://api.pemiluapi.org/calonpresiden/api/caleg?apiKey=fea6f7d9ec0b31e256a673114792cb17</a> gak bisa diakses dari luar Indo ya?</p>
+
+<p>saya test lokal dalam negeri data tampil, tapi waktu test dari AS dan UEA gak mau.</p>
+      </div>
+      </li>
+        <li class="comment">
+      <section class="newPost">
+        <form action="/discussion/5383da40daeff0020000221c/5395b7c22e43480200009ab7" method="post">
+          <textarea placeholder="Reply…" name="comment"></textarea>
+          <div class="postControl">
+            <div class="postTools">
+              <input class="button big blue" value="Submit" type="submit">
+              <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </li>
+  </ol>
+</article>
+                                          <article>
+  <ol class="thread">
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/5022171.jpg" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">argotri </span> <span class="datetime">3 days ago</span></h1>
+                <p>yang ini juga selalu menghasilkan Jokowi :o ? meskipun parameter nama sudah diganti</p>
+      </div>
+      </li>
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/2791933.png" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">ErieOnes </span> <span class="datetime">3 days ago</span></h1>
+                <p>sama seperti reply saya yang dibawah ya.. :)</p>
+
+<p>Thanks</p>
+      </div>
+      </li>
+        <li class="comment">
+      <section class="newPost">
+        <form action="/discussion/5383da40daeff0020000221c/5391fb9065f09502000061fa" method="post">
+          <textarea placeholder="Reply…" name="comment"></textarea>
+          <div class="postControl">
+            <div class="postTools">
+              <input class="button big blue" value="Submit" type="submit">
+              <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </li>
+  </ol>
+</article>
+                                                      </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Candidates</h2>                      <div class="descriptionMethod"><p>A single Candidates object with all its details</p></div>
+                  
+                  <h3 class="nameMethod">Retrieve a Candidate</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/caleg/{id}?apiKey={apiKey}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fcaleg%2F%7Bid%7D%3FapiKey%3D%7BapiKey%7D" name="get-/calonpresiden/api/caleg/{id}?apiKey={apiKey}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink"><em>4</em> <i class="icon-comment"></i></a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id</td>
+                      <td><p>String <code>id</code> of the Candidate to perform action with.</p>
+</td>
+                      <td>string, required<br>example: <samp>jw</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS1E2">                                                      <script>
+window.docResources["generatedResourceCodeS1E2"] = (window.docResources["generatedResourceCodeS1E2"] || []).concat({
+  "url": "/calonpresiden/api/caleg/{id}?apiKey={apiKey}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "apiKey": "06ec082d057daa3d310b27483cc3962e",
+    "id": "jw"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 1,
+        "total": 1,
+        "caleg": [{
+            "id": "jw",
+            "tahun": 2014,
+            "nama": "Joko Widodo",
+            "role": "capres"
+            "id_running_mate": "jk"
+            "jenis_kelamin": "L",
+            "agama": "Islam",
+            "tempat_lahir": "Surakarta",
+            "tanggal_lahir": "1961-06-21",
+            "status_perkawinan": "Kawin",
+            "nama_pasangan": "Hj. Iriana, SE., MM.",
+            "jumlah_anak": "3",
+            "kelurahan_tinggal": "",
+            "kecamatan_tinggal": "",
+            "kab_kota_tinggal": "Jakarta Pusat",
+            "provinsi_tinggal": "DKI Jakarta",
+            "partai": {
+                "id": 4,
+                "nama": "Partai Demokrasi Indonesia"
+            },
+            "biografi": "Joko Widodo atau Jokowi (lahir di Surakarta, Jawa Tengah, 21 Juni 1961; umur 52 tahun) adalah politikus Indonesia dan Gubernur DKI Jakarta. Ia adalah mantan Wali Kota Surakarta (Solo) dari tahun 2005 sampai 2012. Dua tahun sementara menjalani periode keduanya di Solo, Jokowi ditunjuk oleh partainya,Partai Demokrasi Indonesia Perjuangan (PDIP) untuk memasuki pemilihan Gubernur DKI Jakarta bersama dengan Basuki Tjahaja Purnama (Ahok).\n\nWalaupun pada masa kecilnya pernah tergusur sebanyak tiga kali, ia mampu diterima di Fakultas Kehutanan Universitas Gajah Mada dan setelah lulus berhasil menjadi pengusaha furnitur. Setelah itu, karier politiknya dimulai dengan menjadi Wali Kota Surakarta pada tahun 2005. Kemudian, pada tahun 2012, ia dicalonkan oleh PDI-P sebagai calon Gubernur DKI Jakarta.\n\nPada tanggal 20 September 2012, Jokowi berhasil memenangkan Pilkada Jakarta 2012, dan kemenangannya dianggap mencerminkan dukungan populer untuk seorang pemimpin yang ""baru"" dan ""bersih"", meskipun umurnya sudah lebih dari lima puluh tahun. Ia akan menjabat selama lima tahun dan berakhir pada tahun 2017. Selama menjabat sebagai gubernur, ia melancarkan berbagai program seperti Kartu Jakarta Sehat, Kartu Jakarta Pintar, lelang jabatan, pembangunan Angkutan Massal Cepat (MRT) dan Monorel, pengembalian fungsi waduk dan sungai, serta penyediaan ruang terbuka hijau.\n\nSemenjak terpilih sebagai gubernur, popularitasnya melambung tinggi dan ia terus menjadi sorotan media. Akibatnya, muncul wacana untuk menjadikannya calon presiden untuk pemilihan umum presiden Indonesia 2014. Ditambah lagi, hasil survei menunjukkan bahwa nama Jokowi terus diunggulkan. Pada awalnya, Ketua Umum PDI-P, Megawati Soekarnoputri menyatakan bahwa ia tidak akan mengumumkan Calon Presiden PDI-P sampai setelah pemilihan umum legislatif 9 April 2014. Namun, pada tanggal 14 Maret 2014, Jokowi telah menerima mandat dari Megawati untuk maju sebagai calon presiden dari PDI-P, tiga minggu sebelum pemilihan umum legislatif dan dua hari sebelum kampanye.",
+            "riwayat_pendidikan": [
+                {
+                    "id": 1,
+                    "ringkasan": "SDN III Tirtoyoso Solo",
+                    "tanggal_mulai": "",
+                    "tanggal_selesai": ""
+                },
+                {
+                    "id": 2,
+                    "ringkasan": "SMPN I Solo",
+                    "tanggal_mulai": "",
+                    "tanggal_selesai": ""
+                }
+            ],
+            "riwayat_pekerjaan": [
+                {
+                    "id": 3,
+                    "ringkasan": "Eksportir Mebel",
+                    "tanggal_mulai": "",
+                    "tanggal_selesai": ""
+                },
+                {
+                    "id": 4,
+                    "ringkasan": "Walikota Surakarta",
+                    "tanggal_mulai": "2005",
+                    "tanggal_selesai": "2010"
+                }
+            ],
+            "riwayat_organisasi": [
+                {
+                    "id": 5,
+                    "ringkasan": "Bidang Pertambangan dan energi KADIN Surakarta",
+                    "jabatan": "Ketua",
+                    "tanggal_mulai": "1992",
+                    "tanggal_selesai": "1996"
+                }, {
+                    "id": 6,
+                    "ringkasan": "ASMINDO Komda Surakarta",
+                    "jabatan": "Ketua",
+                    "tanggal_mulai": "2002",
+                    "tanggal_selesai": "2007"
+                }
+            ],
+            "riwayat_penghargaan": [
+                {
+                    "id": 7,
+                    "ringkasan": "Satya Bhakti",
+                    "institusi": "Kadin Jawa Tengah",
+                    "tanggal": "2007"
+                }, {
+                    "id": 8,
+                    "ringkasan": "Solo Pos Award",
+                    "institusi": "Solo Pos",
+                    "tanggal": "2007"
+                }
+            ]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/caleg/{id}?apiKey={apiKey}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/caleg/{id}?apiKey={apiKey}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                                                                <article>
+  <ol class="thread">
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/5022171.jpg" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">argotri </span> <span class="datetime">3 days ago</span></h1>
+                <p>ini kok selalu menghasilkan Jokowi ya , :o ? 
+meskipun IDnya sudah saya rubah menjadi jk ato hr 
+<a href="http://calonpresidenapi.apiary.io/calonpresiden/api/caleg/jk?apiKey=b06e79c9b8101a4625e93845b063da72">http://calonpresidenapi.apiary.io/calonpresiden/api/caleg/jk?apiKey=b06e79c9b8101a4625e93845b063da72</a></p>
+      </div>
+      </li>
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/2791933.png" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">ErieOnes </span> <span class="datetime">3 days ago</span></h1>
+                <p>Di dokumen apiary ini cuma contoh aja mas, jadi statis datanya. Untuk melihat yang sebenarnya bisa daftar dulu disini <a href="http://developer.pemiluapi.org/">http://developer.pemiluapi.org/</a> untuk dapat mengakses ke <a href="http://api.pemiluapi.org/calonpresiden/api/caleg/id?apiKey=yourApikey">http://api.pemiluapi.org/calonpresiden/api/caleg/id?apiKey=yourApikey</a></p>
+
+<p>Terimakasih.</p>
+      </div>
+      </li>
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/729627.jpg" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">jimmyleo85 </span> <span class="datetime">2 days ago</span></h1>
+                <p>Dokumentasinya penjelasannya kurang detail, sehingga orang salah persepsi.. Saya juga awalnya seperti mas Argotri kasusnya..</p>
+      </div>
+      </li>
+          <li>
+      <img class="avatar" src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/5022171.jpg" height="48" width="48">
+      <div class="post">
+        <h1><span class="author">argotri </span> <span class="datetime">12 hours ago</span></h1>
+                <p>aduw ternyata ada beberapa format Json yang ndak sama nih</p>
+      </div>
+      </li>
+        <li class="comment">
+      <section class="newPost">
+        <form action="/discussion/5383da40daeff0020000221c/5391fb0b65f09502000060b5" method="post">
+          <textarea placeholder="Reply…" name="comment"></textarea>
+          <div class="postControl">
+            <div class="postTools">
+              <input class="button big blue" value="Submit" type="submit">
+              <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </li>
+  </ol>
+</article>
+                                                      </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+      <a name="events"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Events</h1>          <div class="details"><p>Events related resources of the <strong>Presidential Candidate API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Events Collection</h2>                      <div class="descriptionMethod"><p>A list of Event objects</p></div>
+                  
+                  <h3 class="nameMethod">List all Events</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/events?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;before={before}&amp;after={after}&amp;limit={limit}&amp;offset={offset}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fevents%3FapiKey%3D%7BapiKey%7D%26id_calon%3D%7Bid_calon%7D%26tags%3D%7Btags%7D%26before%3D%7Bbefore%7D%26after%3D%7Bafter%7D%26limit%3D%7Blimit%7D%26offset%3D%7Boffset%7D" name="get-/calonpresiden/api/events?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;before={before}&amp;after={after}&amp;limit={limit}&amp;offset={offset}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>offset</td>
+                      <td><p>Number the offset from the beginning of the list of records to return (use in combination with <code>limit</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>300</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>limit</td>
+                      <td><p>Number the number of records to return (use in combination with <code>offset</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>25</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>after</td>
+                      <td><p>String return events only on or after this date</p>
+</td>
+                      <td>date, optional<br>example: <samp>2014-05-21</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>before</td>
+                      <td><p>String return events only on or before this date</p>
+</td>
+                      <td>date, optional<br>example: <samp>2014-06-21</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>tags</td>
+                      <td><p>String list of <code>tags</code> by which to filter the events.</p>
+</td>
+                      <td>string, optional<br>example: <samp>women,participation</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id_calon</td>
+                      <td><p>String list of candidate IDs for the candidate or candidates related to the events</p>
+</td>
+                      <td>string, optional<br>example: <samp>ps</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS2E1">                                                      <script>
+window.docResources["generatedResourceCodeS2E1"] = (window.docResources["generatedResourceCodeS2E1"] || []).concat({
+  "url": "/calonpresiden/api/events?apiKey={apiKey}\u0026id_calon={id_calon}\u0026tags={tags}\u0026before={before}\u0026after={after}\u0026limit={limit}\u0026offset={offset}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "offset": 300,
+    "limit": 25,
+    "after": "2014-05-21",
+    "before": "2014-06-21",
+    "tags": "women,participation",
+    "id_calon": "ps",
+    "apiKey": "06ec082d057daa3d310b27483cc3962e"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 3,
+        "events": [{
+            "id": "0001",
+            "id_calon": ["ps", "jw"],
+            "judul": "Debat Capres di SCTV",
+            "deskripsi": "Dua orang capres akan berdebat dalam acara yang diselenggarakan oleh salah satu Televisi Swasta yaitu SCTV",
+            "tanggal_mulai": "2014-06-08",
+            "waktu_mulai": "",
+            "tanggal_selesai": "2014-06-08",
+            "waktu_selesai": "",
+            "tags": ["debat", "capres", "televisi"]
+        }, {
+            "id": "0002",
+            "id_calon": ["ps", "jw"],
+            "judul": "Debat Capres di TV One",
+            "deskripsi": "Dua orang capres akan berdebat dalam acara yang diselenggarakan oleh salah satu Televisi Swasta yaitu TV One",
+            "tanggal_mulai": "2014-06-22",
+            "waktu_mulai": "",
+            "tanggal_selesai": "2014-06-22",
+            "waktu_selesai": "",
+            "tags": ["debat", "capres", "televisi"]
+        }, {
+            "id": "0003",
+            "id_calon": ["jk", "hr"],
+            "judul": "Debat Cawapres di Metro TV",
+            "deskripsi": "Dua orang cawapres akan berdebat dalam acara yang diselenggarakan oleh salah satu Televisi Swasta yaitu Metro TV",
+            "tanggal_mulai": "2014-06-15",
+            "waktu_mulai": "",
+            "tanggal_selesai": "2014-06-15",
+            "waktu_selesai": "",
+            "tags": ["debat", "capres", "televisi", "cawapres"]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/events?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;before={before}&amp;after={after}&amp;limit={limit}&amp;offset={offset}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/events?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;before={before}&amp;after={after}&amp;limit={limit}&amp;offset={offset}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Events</h2>                      <div class="descriptionMethod"><p>A single Events object with all its details</p></div>
+                  
+                  <h3 class="nameMethod">Retrieve a Event</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/events/{id}?apiKey={apiKey}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fevents%2F%7Bid%7D%3FapiKey%3D%7BapiKey%7D" name="get-/calonpresiden/api/events/{id}?apiKey={apiKey}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id</td>
+                      <td><p>String <code>id</code> of the event to perform action with.</p>
+</td>
+                      <td>string, required<br>example: <samp>0003</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS2E2">                                                      <script>
+window.docResources["generatedResourceCodeS2E2"] = (window.docResources["generatedResourceCodeS2E2"] || []).concat({
+  "url": "/calonpresiden/api/events/{id}?apiKey={apiKey}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "apiKey": "06ec082d057daa3d310b27483cc3962e",
+    "id": "0003"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 1,
+        "events": [{
+            "id": "0003",
+            "id_calon": ["jk", "hr"],
+            "judul": "Debat Cawapres di Metro TV",
+            "deskripsi": "Dua orang cawapres akan berdebat dalam acara yang diselenggarakan oleh salah satu Televisi Swasta yaitu Metro TV",
+            "tanggal_mulai": "2014-06-15",
+            "waktu_mulai": "",
+            "tanggal_selesai": "2014-06-15",
+            "waktu_selesai": "",
+            "tags": ["debat", "capres", "televisi", "cawapres"]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/events/{id}?apiKey={apiKey}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/events/{id}?apiKey={apiKey}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+      <a name="promises"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Promises</h1>          <div class="details"><p>Promises related resources of the <strong>Presidential Candidate API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Promises Collection</h2>                      <div class="descriptionMethod"><p>A list of Promise objects</p></div>
+                  
+                  <h3 class="nameMethod">List all Promises</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/promises?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fpromises%3FapiKey%3D%7BapiKey%7D%26id_calon%3D%7Bid_calon%7D%26tags%3D%7Btags%7D%26limit%3D%7Blimit%7D%26offset%3D%7Boffset%7D" name="get-/calonpresiden/api/promises?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>offset</td>
+                      <td><p>Number the offset from the beginning of the list of records to return (use in combination with <code>limit</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>300</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>limit</td>
+                      <td><p>Number the number of records to return (use in combination with <code>offset</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>25</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>tags</td>
+                      <td><p>String list of <code>tags</code> by which to filter the promises.</p>
+</td>
+                      <td>string, optional<br>example: <samp>women,participation</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id_calon</td>
+                      <td><p>String list of candidate IDs for the candidate or candidates related to the promises</p>
+</td>
+                      <td>string, optional<br>example: <samp>ps</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS3E1">                                                      <script>
+window.docResources["generatedResourceCodeS3E1"] = (window.docResources["generatedResourceCodeS3E1"] || []).concat({
+  "url": "/calonpresiden/api/promises?apiKey={apiKey}\u0026id_calon={id_calon}\u0026tags={tags}\u0026limit={limit}\u0026offset={offset}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "offset": 300,
+    "limit": 25,
+    "tags": "women,participation",
+    "id_calon": "ps",
+    "apiKey": "06ec082d057daa3d310b27483cc3962e"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 3,
+        "promises": [{
+            "id": "0001",
+            "id_calon": "jw",
+            "context_janji": "Tetap akan mengawal pembangunan di Jakarta",
+            "janji": "Ya tentu saja akan mengawal, karena apa? Ini Jakarta menyangkut Jabodetabek, untuk transportasi Ini justru bisa mempercepat penyelesaian masalah-masalah yang ada",
+            "tanggal": "2014-03-24",
+            "judul_sumber": "merdeka.com",
+            "url_sumber": "https://id.berita.yahoo.com/jika-jadi-presiden-jokowi-janji-tetap-benahi-jakarta-072751011.html",
+            "tags": ["janji","jokowi","pembangunan jakarta"]
+        }, {
+            "id": "0002",
+            "id_calon": "jw",
+            "context_janji": "Selamatkan lahan pertanian",
+            "janji": "Jokowi mengatakan jika terpilih menjadi presiden maka ia akan fokus pada penanganan lahan untuk masyarakat. Terutama lahan yang digunakan sebagai lahan pertanian",
+            "tanggal": "2014-05-01",
+            "judul_sumber": "merdeka.com",
+            "url_sumber": "https://id.berita.yahoo.com/jadi-presiden-jokowi-janji-ke-petani-selamatkan-lahan-064346728.html",
+            "tags": ["janji","jokowi","lahan pertanian"]
+        }, {
+            "id": "0003",
+            "id_calon": "jw",
+            "context_janji": "Memperbaiki capaian kinerja pemerintahan SBY",
+            "janji": "Calon presiden dari partai PDIP, Joko Widodo menyatakan siap memperbaiki capaian kinerja Pemerintahan pimpinan Susilo Bambang Yudhoyono (SBY)",
+            "tanggal": "2014-04-30",
+            "judul_sumber": "portalkbr.com",
+            "url_sumber": "http://www.portalkbr.com/berita/beritapemilu/3229825_6033.html",
+            "tags": ["janji","jokowi","kinerja"]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/promises?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/promises?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Promises</h2>                      <div class="descriptionMethod"><p>A single Promises object with all its details</p></div>
+                  
+                  <h3 class="nameMethod">Retrieve a Promise</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/promises/{id}?apiKey={apiKey}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fpromises%2F%7Bid%7D%3FapiKey%3D%7BapiKey%7D" name="get-/calonpresiden/api/promises/{id}?apiKey={apiKey}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id</td>
+                      <td><p>String <code>id</code> of the promise to perform action with.</p>
+</td>
+                      <td>string, required<br>example: <samp>0003</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS3E2">                                                      <script>
+window.docResources["generatedResourceCodeS3E2"] = (window.docResources["generatedResourceCodeS3E2"] || []).concat({
+  "url": "/calonpresiden/api/promises/{id}?apiKey={apiKey}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "apiKey": "06ec082d057daa3d310b27483cc3962e",
+    "id": "0003"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 1,
+        "promises": [{
+            "id": "0003",
+            "id_calon": "jw",
+            "context_janji": "Memperbaiki capaian kinerja pemerintahan SBY",
+            "janji": "Calon presiden dari partai PDIP, Joko Widodo menyatakan siap memperbaiki capaian kinerja Pemerintahan pimpinan Susilo Bambang Yudhoyono (SBY)",
+            "tanggal": "2014-04-30",
+            "judul_sumber": "portalkbr.com",
+            "url_sumber": "http://www.portalkbr.com/berita/beritapemilu/3229825_6033.html",
+            "tags": ["janji","jokowi","kinerja"]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/promises/{id}?apiKey={apiKey}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/promises/{id}?apiKey={apiKey}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+      <a name="videos"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Videos</h1>          <div class="details"><p>Videos related resources of the <strong>Presidential Candidate API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Videos Collection</h2>                      <div class="descriptionMethod"><p>A list of Video objects</p></div>
+                  
+                  <h3 class="nameMethod">List all Videos</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/videos?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fvideos%3FapiKey%3D%7BapiKey%7D%26id_calon%3D%7Bid_calon%7D%26tags%3D%7Btags%7D%26limit%3D%7Blimit%7D%26offset%3D%7Boffset%7D" name="get-/calonpresiden/api/videos?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>offset</td>
+                      <td><p>Number the offset from the beginning of the list of records to return (use in combination with <code>limit</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>300</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>limit</td>
+                      <td><p>Number the number of records to return (use in combination with <code>offset</code> to support pagination)</p>
+</td>
+                      <td>number, optional<br>example: <samp>25</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>tags</td>
+                      <td><p>String list of <code>tags</code> by which to filter the videos.</p>
+</td>
+                      <td>string, optional<br>example: <samp>women,participation</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id_calon</td>
+                      <td><p>String list of candidate IDs for the candidate or candidates related to the events</p>
+</td>
+                      <td>string, optional<br>example: <samp>ps</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS4E1">                                                      <script>
+window.docResources["generatedResourceCodeS4E1"] = (window.docResources["generatedResourceCodeS4E1"] || []).concat({
+  "url": "/calonpresiden/api/videos?apiKey={apiKey}\u0026id_calon={id_calon}\u0026tags={tags}\u0026limit={limit}\u0026offset={offset}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "offset": 300,
+    "limit": 25,
+    "tags": "women,participation",
+    "id_calon": "ps",
+    "apiKey": "06ec082d057daa3d310b27483cc3962e"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 3,
+        "videos": [{
+            "id": "0001",
+            "id_calon": ["ps"],
+            "judul": "Prabowo Subianto: Orasi Politik Prabowo Subianto pada Hari Buruh",
+            "url_video": "http://www.youtube.com/watch?v=UH73XrMKxUI",
+            "tanggal_direkam": "2014-05-01",
+            "tanggal_upload": "2014-05-01",
+            "tags": ["orasi", "pidato", "prabowo"]
+        }, {
+            "id": "0002",
+            "id_calon": ["ps"],
+            "judul": "Pidato Letjen TNI Prabowo Subianto satu bulan sebelum Presiden Soeharto Lengser pada acara Syukuran Pangkostrad",
+            "url_video": "http://www.youtube.com/watch?v=0aWF8S9HJCw",
+            "tanggal_direkam": "1998-04-21",
+            "tanggal_upload": "2013-05-13",
+            "tags": ["orasi", "pidato", "prabowo"]
+        }, {
+            "id": "0003",
+            "id_calon": ["ps"],
+            "judul": "Prabowo Subianto berbicara dengan Dalton Tanonaka mengenai keinginannya menjadi presiden Republik Indonesia, kepergiannya ke Jordan tahun 1998, berakhirnya dukungan Prabowo kepada SBY, pesan yang ingin disampaikan dengan Partai Gerindra, kerusuhan 1998, penculikan aktivis demokrasi 1998, tuduhan kekerasan terhadap suku Cina, visa Amerika, dan orang-orang yang mempengaruhi cara berpikir Prabowo. Direkam tahun 2008.",
+            "url_video": "http://www.youtube.com/watch?v=08SMkHVMK3E",
+            "tanggal_direkam": "2008",
+            "tanggal_upload": "2011-12-05",
+            "tags": ["interview", "prabowo"]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/videos?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/videos?apiKey={apiKey}&amp;id_calon={id_calon}&amp;tags={tags}&amp;limit={limit}&amp;offset={offset}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Videos</h2>                      <div class="descriptionMethod"><p>A single Videos object with all its details</p></div>
+                  
+                  <h3 class="nameMethod">Retrieve a Video</h3>
+        
+        <section class="resource noActivity hasDescription">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/calonpresiden/api/videos/{id}?apiKey={apiKey}</h2>
+            <a class="resourcePermalink" href="#get-%2Fcalonpresiden%2Fapi%2Fvideos%2F%7Bid%7D%3FapiKey%3D%7BapiKey%7D" name="get-/calonpresiden/api/videos/{id}?apiKey={apiKey}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>apiKey</td>
+                      <td><p>String <code>apiKey</code> of the application.</p>
+</td>
+                      <td>string, required<br>example: <samp>06ec082d057daa3d310b27483cc3962e</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>id</td>
+                      <td><p>String <code>id</code> of the Video to perform action with.</p>
+</td>
+                      <td>string, required<br>example: <samp>0003</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS4E2">                                                      <script>
+window.docResources["generatedResourceCodeS4E2"] = (window.docResources["generatedResourceCodeS4E2"] || []).concat({
+  "url": "/calonpresiden/api/videos/{id}?apiKey={apiKey}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "apiKey": "06ec082d057daa3d310b27483cc3962e",
+    "id": "0003"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "results": {
+        "count": 1,
+        "videos": [{
+            "id": "0003",
+            "id_calon": ["ps"],
+            "judul": "Prabowo Subianto berbicara dengan Dalton Tanonaka mengenai keinginannya menjadi presiden Republik Indonesia, kepergiannya ke Jordan tahun 1998, berakhirnya dukungan Prabowo kepada SBY, pesan yang ingin disampaikan dengan Partai Gerindra, kerusuhan 1998, penculikan aktivis demokrasi 1998, tuduhan kekerasan terhadap suku Cina, visa Amerika, dan orang-orang yang mempengaruhi cara berpikir Prabowo. Direkam tahun 2008.",
+            "url_video": "http://www.youtube.com/watch?v=08SMkHVMK3E",
+            "tanggal_direkam": "2008",
+            "tanggal_upload": "2011-12-05",
+            "tags": ["interview", "prabowo"]
+        }]
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /calonpresiden/api/videos/{id}?apiKey={apiKey}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/5383da40daeff0020000221c" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/calonpresiden/api/videos/{id}?apiKey={apiKey}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+  
+<div id="fontSizeSwitch" title="Adjust Font Size"><ul class="layerOver"><li class="fontSizeItem fontSizeNormal active">a</li><li class="fontSizeItem fontSizeM">a</li><li class="fontSizeItem fontSizeL">a</li><li class="fontSizeItem fontSizeXL">a</li></ul></div></div>
+
+</div>
+
+<div class="loginOverlay overlay smallerPanel" style="display:none" id="loginPicker">
+  <div class="closeLayer"></div>
+  <div class="panelShadow">
+    <div class="panelLegacy">
+      <a href="#"><span class="block close"></span></a>
+      <form action="https://login.apiary.io//api/login" method="post" accept-charset="utf-8">
+        <div class="discusion">
+          <h1>Identify Yourself</h1>
+          <p>To proceed, please use credentials from one of the following services.</p>
+          <ul class="overlayLoginList">
+            <a href="https://github.com/login/oauth/authorize?client_id=f739c33cbd5c32296a43&amp;redirect_uri=https%3A%2F%2Flogin.apiary.io%2Fgithub%2Flogin%3Fdiscussion%3D1%26redirect%3Dhttp%253A%252F%252Fdocs.calonpresidenapi.apiary.io%252Flogin%252Fcallback" data-type="github"><li>GitHub<img src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/arrowOfTime-e204e0dbfdab5e33.png" height="20" width="12"></li></a>
+            <a href="https://login.apiary.io/twitter/send_to_login?discussion=1&amp;redirect=http%3A%2F%2Fdocs.calonpresidenapi.apiary.io%2Flogin%2Fcallback" data-type="twitter"><li>Twitter<img src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/arrowOfTime-e204e0dbfdab5e33.png" height="20" width="12"></li></a>
+            <a href="#" data-type="apiary"><li>apiary.io<img src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/arrowOfTime-e204e0dbfdab5e33.png" height="20" width="12"></li></a>
+          </ul>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="appLogin" style="display:none" class="loginOverlay overlay smallerPanel">
+  <div class="closeLayer"></div>
+  <div class="panelShadow">
+    <div class="panelLegacy">
+      <a href="#"><span class="block close"></span></a>
+      <form action="https://login.apiary.io/api/login?xhr_login=1" method="post" accept-charset="utf-8">
+        <img src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/apiary-io-beta-logo-1x-7a5112f76ac0f4de.png" height="30" width="160">
+        <ul id="loginUL">
+          <li>
+            <p><label for="username">Your e-mail</label></p>
+            <input class="textField" name="username" id="username" tabindex="1" type="text">
+          </li>
+          <li>
+            <p class="fieldDetails"><a href="https://login.apiary.io/password-recovery">Forgotten password</a></p>
+            <p><label for="password">Password</label></p>
+            <input class="textField" name="password" value="" id="password" tabindex="2" type="password">
+          </li>
+        </ul>
+        <p><input class="button small yellow" value="Sign In" tabindex="3" type="submit"></p>
+        <div class="adI">
+          <p>
+            Need an account?<br>
+            <a tabindex="4" href="https://login.apiary.io/register">Sign up now</a>.
+          </p>
+        </div>
+        <div class="clr"></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  
+</div>
+
+  <script>
+    window.config = {
+      "baseAjaxUrl": "http://docs.calonpresidenapi.apiary.io/"
+    };
+  </script>
+
+  <script>
+    window.jsLoginUrl    = "https://login.apiary.io/login?discussion=1&xhr_login=1";
+    window.jsLoggedIn    = false;
+    window.trafficSecret = "";
+    window.runExampleIframeUrl = "http://calonpresidenapi.apiary.io/___APIARY_INTERNAL___/docs/run-button";
+    window.tryItUrl    = "http://calonpresidenapi.apiary.io";
+    window.mockserverUrl    = "http://calonpresidenapi.apiary-mock.com";
+    window.loginUri      = "https://login.apiary.io/login";
+    window.baseDomain    = "apiary.io";
+    window.config.languages = {"raw":"none (raw data)","curl":"curl","csharp":"C#","javascript":"javascript","nodejs":"node.js","python":"python","php":"php","ruby":"ruby","vb":"Visual Basic"};
+    window.previewHelpers = window.previewHelpers || {};
+    window.previewHelpers.getContentTypeBrush = function (contentType) {
+    if ((contentType != null ? contentType.slice(-5) : void 0) === '+json') {
+      return 'language-javascript';
+    }
+    if ((contentType != null ? contentType.slice(-4) : void 0) === '+xml') {
+      return 'language-markup';
+    }
+    switch (contentType) {
+      case 'application/json':
+        return 'language-javascript';
+      case 'text/xml':
+        return 'language-markup';
+      case 'application/xml':
+        return 'language-markup';
+      default:
+        return '';
+    }
+  };
+    window.previewHelpers.apiUrl = window.previewHelpers.mockserverUrl = "http://calonpresidenapi.apiary-mock.com";
+
+    window['examplesBundle'] = window['examplesBundle'] || function(data) {
+      if (data && data.root) {
+        $.getScript('https://apiary.a.ssl.fastly.net/assets/js/libs/ect-812663b24498f44e.js', function () {
+          window.config.ectRender = window.ECT({ 'watch': false, 'cache': true, 'root': data.root, 'ext': '.html' });
+          var expandedResource = $('section.resource.expanded section.code');
+          if (expandedResource.length > 0) {
+            window.renderExampleCodes(expandedResource);
+          }
+        });
+      }
+    };
+  </script>
+  <!-- uriTemplates expand support -->
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/uritemplate-c6f8656d13255c83.js"></script>
+  <!-- render-preview helpers -->
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/preview-6cc5d557a4e67784.js"></script>
+  <!-- vitalize documentation -->
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/docs-6d92b5ad424da228.js"></script>
+  <!-- templates in JSONP -->
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/examples.js"></script>
+  <!-- inspect traffic w/ ease -->
+  <script src="Presidential%20Candidate%20API%E2%80%94by%20apiary.io_files/traffic-83f8d935b3a7b5b0.js" data-multipart-container=".resource .debugger[data-resource-signature=&quot;#{method} #{url}&quot;]"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-1', 'apiary.io');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 977730005;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://' : 'http://') + 'www.googleadservices.com/pagead/conversion.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+
+
+
+</body></html>

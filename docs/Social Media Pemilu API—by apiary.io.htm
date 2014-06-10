@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/conversion.js" async=""></script><script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/analytics.js" async=""></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Social Media Pemilu API—by apiary.io</title>
+    <meta name="description" content="a place where APIs are kept">
+  <meta name="author" content="apiary.io">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  <link rel="shortcut icon" href="https://apiary.a.ssl.fastly.net/assets/icons/favicon-aa8fc5808796304b.ico">
+  <link rel="apple-touch-icon-precomposed" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-precomposed-16cb9301e5cd0912.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-72x72-precomposed-88b45e069ad376bd.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-114x114-precomposed-166416e5d92f4c45.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://apiary.a.ssl.fastly.net/assets/icons/apple-touch-icon-144x144-precomposed-54504235b83a48b2.png">
+
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/normalize-c1a6015040ef1201.css">
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/font-awesome-b2431b0e6805305e.css" media="screen, presentation, print">
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/docs-b8ad3a4db9c43a86.css" media="screen, presentation">
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/head-foot-cdb0c8eb0e591a64.css" media="screen, presentation">
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/multi-ac53b26aef3f90c2.css" media="screen, presentation">
+
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/sign-in-sign-up-fa7f0d87430e8def.css" media="screen, presentation">
+
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/print-8c2a2b1510499b5a.css" media="print">
+
+  <link rel="stylesheet" href="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/prism-ac8b50ad63b3f96b.css" media="screen, presentation">
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/prism-f0938f33defadce9.js" data-manual=""></script>
+
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/jquery-1.js"></script>
+
+</head>
+
+<body class="themeDark">
+
+<div id="container">
+
+
+  
+
+<header class="fullSize"><div class="apiaryMenu"><div class="wholeMenu menuRow">
+
+  <div role="banner" class="apiaryLogo menuCell"><a class="absFg" title="Apiary Ltd." href="http://apiary.io/"><span class="visuallyhidden">Apiary</span></a></div>
+
+    <hgroup class="menuCell apiNameCell">
+    <div class="apiSwitchName">
+      <div class="apiSwitcher">
+                          <div class="apiLines vIcoHover">
+        <h1 class="apiName oneLiner" title="Social Media Pemilu API"><span class="ellipsis">Social Media Pemilu API</span></h1>
+            </div>
+        </div>
+    </div>
+  </hgroup>
+  
+<!-- shared for unknown-guest / logged-in user -->
+
+  <nav class="apiMenu menuCell">    <ul class="apiMenuList apiMenuTexts">
+      <li class="apiMenuItem">
+        <a id="docLink" href="http://docs.socmedpemilu.apiary.io/" class="selected">Documentation</a>
+      </li>
+      <li class="apiMenuItem">
+                  <a id="trafficLink" href="http://docs.socmedpemilu.apiary.io/traffic">Traffic Inspector</a>
+              </li>
+          </ul>
+  </nav>
+
+  
+
+  <div class="menuCell flexibleSpace"></div>
+
+      <div class="secondaryNav menuCell dualLine">
+      <div class="switcherToggle">
+        <h2 class="poweredByApiary">Apiary Powered Documentation</h2>
+        <p class="headSignInLinks">
+          <a href="https://login.apiary.io/login?redirect=http%3A%2F%2Fdocs.socmedpemilu.apiary.io%2F">Sign in</a> with Apiary account
+        </p>
+      </div>
+    </div>
+  
+</div></div></header>
+
+
+
+
+<div id="documentationContainer">
+
+    <div id="rightColumn">
+              <p class="title">Table of Contents</p>
+        <ul id="toc">
+                      <li><a href="#post">Post</a></li>
+                      <li><a href="#user">User</a></li>
+                      <li><a href="#hashtag">Hashtag</a></li>
+                      <li><a href="#tag">Tag</a></li>
+                  </ul>
+            <div id="endpoints">
+        <ul>
+                                              <p class="title">Mock Server</p>
+              <input name="mock-api" value="http://socmedpemilu.apiary-mock.com" readonly="readonly" id="mock-api" tabindex="2" type="text">
+              <p>Use this URL to access a mockup of the API server. Your
+ traffic will be recorded and compared to the documentation. You'll find
+ your traffic analysis in the <a href="http://docs.socmedpemilu.apiary.io/traffic">inspector</a> or directly here in the documentation, right next to each resource.</p>
+                              </ul>
+      </div>
+    </div>
+
+<script>window.docResources = {};</script>
+
+<div class="rawExample" id="leftColumn">
+  <h1 id="apiHeadline">Social Media Pemilu API</h1>
+
+  <div class="details"><p>Social Media Pemilu API  is a service that 
+provides social media information from president candidates in the 2014 
+Indonesian President Elections.</p>
+
+<p>Sample calls:</p>
+
+<h2>Post :</h2>
+
+<p><strong>List all tweet</strong><br>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=post">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=post</a></p>
+
+<h2>User</h2>
+
+<p><strong>List all tweet</strong>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user</a></p>
+
+<p><strong>Get a single user candidate</strong><br>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user/view&amp;user_id=40580714">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user/view&amp;user_id=40580714</a></p>
+
+<p><strong>Get list statistic of candidate account</strong><br>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user/statistic&amp;user_id=40580714&amp;start_date=2014-06-01&amp;end_date=2014-06-07">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user/statistic&amp;user_id=40580714&amp;start_date=2014-06-01&amp;end_date=2014-06-07</a></p>
+
+<p><strong>Get retweet count from particular Candidate and particular days back</strong><br>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user/retweet&amp;user_id=40580714&amp;days=15">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=user/retweet&amp;user_id=40580714&amp;days=15</a></p>
+
+<h2>Hashtag</h2>
+
+<p><strong>List all tracked Hahstag</strong><br>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=hashtag">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=hashtag</a></p>
+
+<h2>Tag</h2>
+
+<p><strong>List all tag</strong><br>
+<a href="http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=tag">http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=tag</a></p></div>
+        <a name="post"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Post</h1>          <div class="details"><p>Post related resources of the <strong>Post API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Post Collection</h2>                  
+                  <h3 class="nameMethod">List recent Post</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/post&amp;username={username}&amp;social={social}&amp;hashtag_id={hashtag_id}&amp;tag_id={tag_id}&amp;order={order}&amp;perpage={perpage}&amp;page={page}</h2>
+            <a class="resourcePermalink" href="#get-%2Fpost%26username%3D%7Busername%7D%26social%3D%7Bsocial%7D%26hashtag_id%3D%7Bhashtag_id%7D%26tag_id%3D%7Btag_id%7D%26order%3D%7Border%7D%26perpage%3D%7Bperpage%7D%26page%3D%7Bpage%7D" name="get-/post&amp;username={username}&amp;social={social}&amp;hashtag_id={hashtag_id}&amp;tag_id={tag_id}&amp;order={order}&amp;perpage={perpage}&amp;page={page}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>username</td>
+                      <td><p>String <code>username</code> of social media user of presidential candidate.</p>
+</td>
+                      <td>string, optional<br>example: <samp>prabowo08</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>hashtag_id</td>
+                      <td><p>Number <code>hashtag_id</code> is a id for hastag.</p>
+</td>
+                      <td>number, optional<br>example: <samp>2</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>tag_id</td>
+                      <td><p>Number <code>tag_id</code> is a id for tag.</p>
+</td>
+                      <td>number, optional<br>example: <samp>1</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>social</td>
+                      <td><p>String <code>social</code> of social media name.</p>
+</td>
+                      <td>string, optional<br>example: <samp>twitter, facebook, instagram, or gplus</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>order</td>
+                      <td><p>String <code>order</code> to specific if post will be sorting recent post or popular post.</p>
+</td>
+                      <td>string, optional<br>example: <samp>recent or popular</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>perpage</td>
+                      <td><p>Number <code>perpage</code> is a number of records to return.</p>
+</td>
+                      <td>number, optional<br>example: <samp>50</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>page</td>
+                      <td><p>Number <code>page</code> is an offset from the beginning of the list of records to return</p>
+</td>
+                      <td>number, optional<br>example: <samp>1</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS1E1">                                                      <script>
+window.docResources["generatedResourceCodeS1E1"] = (window.docResources["generatedResourceCodeS1E1"] || []).concat({
+  "url": "/post\u0026username={username}\u0026social={social}\u0026hashtag_id={hashtag_id}\u0026tag_id={tag_id}\u0026order={order}\u0026perpage={perpage}\u0026page={page}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "username": "prabowo08",
+    "hashtag_id": 2,
+    "tag_id": 1,
+    "social": "twitter, facebook, instagram, or gplus",
+    "order": "recent or popular",
+    "perpage": 50,
+    "page": 1
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    items: [{
+        id: "1",
+        social_media: "twitter",
+        user: {
+            id: "40580714",
+            username: "Prabowo08",
+            name: "Prabowo Subianto",
+            link: "http://www.twitter.com/Prabowo08",
+            avatar_url: "https://pbs.twimg.com/profile_images/460771630289920000/6mVEgKCw.jpeg",
+            desc: null,
+            social_media: "twitter"
+        },
+        post: {
+            post_id: "470854927313408001",
+            link: "https://twitter.com/Prabowo08/status/470854927313408001",
+            message: "RT @LaNyallaMM: Jika #PrabowoHatta menang Insya Allah sepakbola dan timnas Indonesia benar-benar akan menjadi #MacanAsia. Saya yakin dengan…",
+            created_at: "2014-05-26 11:12:17",
+            favorite_count: 0,
+            retweet_count: 467
+        },
+        media: [ ],
+        hashtag: [
+            {
+                id: "2",
+                title: "PrabowoHatta"
+            },
+            {
+                id: "3",
+                title: "MacanAsia"
+            }
+        ],
+        tag: [
+            {
+                id: "1",
+                title: "Olahraga"
+            }
+        ]
+    }],
+    _links: {
+        self: {
+            href: "http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=post&amp;social=twitter&amp;amp;user_id=40580714&amp;amp;perpage=1&amp;page=1"
+        },
+        next: {
+            href: "http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=post&amp;social=twitter&amp;amp;user_id=40580714&amp;amp;perpage=1&amp;page=2"
+        },
+        last: {
+            href: "http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=post&amp;social=twitter&amp;amp;user_id=40580714&amp;amp;perpage=1&amp;page=47"
+        }
+    },
+    _meta: {
+        type: "post",
+        totalCount: "47",
+        pageCount: 47,
+        currentPage: 1,
+        perPage: "1"
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /post&amp;username={username}&amp;social={social}&amp;hashtag_id={hashtag_id}&amp;tag_id={tag_id}&amp;order={order}&amp;perpage={perpage}&amp;page={page}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/post&amp;username={username}&amp;social={social}&amp;hashtag_id={hashtag_id}&amp;tag_id={tag_id}&amp;order={order}&amp;perpage={perpage}&amp;page={page}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+      <a name="user"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>User</h1>          <div class="details"><p>User related resources of the <strong>Post API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">User Collection</h2>                  
+                  <h3 class="nameMethod">List tracked user</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/user</h2>
+            <a class="resourcePermalink" href="#get-%2Fuser" name="get-/user"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>social</td>
+                      <td><p>String <code>social</code> of social media name.</p>
+</td>
+                      <td>string, optional<br>example: <samp>twitter, facebook,instagram, or gplus</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS2E1">                                                      <script>
+window.docResources["generatedResourceCodeS2E1"] = (window.docResources["generatedResourceCodeS2E1"] || []).concat({
+  "url": "/user",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "social": "twitter, facebook,instagram, or gplus"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    items: [
+        {
+            user: {
+                id: "40580714",
+                username: "Prabowo08",
+                name: "Prabowo Subianto",
+                link: "http://www.twitter.com/Prabowo08",
+                avatar_url: "https://pbs.twimg.com/profile_images/460771630289920000/6mVEgKCw.jpeg",
+                desc: null,
+                social_media: "twitter"
+            }
+        },
+    ],
+    _meta: {
+        type: "user"
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /user"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/user" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">User View</h2>                  
+                  <h3 class="nameMethod">List social media User or page of presidential candidates</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/user/view&amp;user_id={user_id}</h2>
+            <a class="resourcePermalink" href="#get-%2Fuser%2Fview%26user_id%3D%7Buser_id%7D" name="get-/user/view&amp;user_id={user_id}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>user_id</td>
+                      <td><p>Numeric <code>user_id</code> of user of social media presidential candidates.</p>
+</td>
+                      <td>numeric, required<br>example: <samp>40580714</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS2E2">                                                      <script>
+window.docResources["generatedResourceCodeS2E2"] = (window.docResources["generatedResourceCodeS2E2"] || []).concat({
+  "url": "/user/view\u0026user_id={user_id}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "user_id": "40580714"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    items: [
+        {
+            user: {
+                id: "40580714",
+                username: "Prabowo08",
+                name: "Prabowo Subianto",
+                link: "http://www.twitter.com/Prabowo08",
+                avatar_url: "https://pbs.twimg.com/profile_images/460771630289920000/6mVEgKCw.jpeg",
+                desc: null,
+                social_media: "twitter"
+            }
+        },
+    ],
+    _meta: {
+        type: "user"
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /user/view&amp;user_id={user_id}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/user/view&amp;user_id={user_id}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">User Statistic</h2>                  
+                  <h3 class="nameMethod">List social media User or page of presidential candidates</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/user/statistic&amp;user_id={user_id}&amp;start_date={start_date}&amp;end_date={end_date}</h2>
+            <a class="resourcePermalink" href="#get-%2Fuser%2Fstatistic%26user_id%3D%7Buser_id%7D%26start_date%3D%7Bstart_date%7D%26end_date%3D%7Bend_date%7D" name="get-/user/statistic&amp;user_id={user_id}&amp;start_date={start_date}&amp;end_date={end_date}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>user_id</td>
+                      <td><p>Numeric <code>user_id</code> of user of social media presidential candidates.</p>
+</td>
+                      <td>numeric, required<br>example: <samp>40580714</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>start_date</td>
+                      <td><p>Start Date on when the stastic to be fetched</p>
+</td>
+                      <td>string, optional<br>example: <samp>2014-5-1</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>end_date</td>
+                      <td><p>End Date on when the stastic to be fetched</p>
+</td>
+                      <td>string, optional<br>example: <samp>2014-6-4</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS2E3">                                                      <script>
+window.docResources["generatedResourceCodeS2E3"] = (window.docResources["generatedResourceCodeS2E3"] || []).concat({
+  "url": "/user/statistic\u0026user_id={user_id}\u0026start_date={start_date}\u0026end_date={end_date}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "user_id": "40580714",
+    "start_date": "2014-5-1",
+    "end_date": "2014-6-4"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "user": {
+    "id": "40580714",
+    "username": "Prabowo08",
+    "name": "Prabowo Subianto",
+    "link": "http://www.twitter.com/Prabowo08",
+    "avatar_url": "https://pbs.twimg.com/profile_images/460771630289920000/6mVEgKCw.jpeg",
+    "desc": null,
+    "social_media": "twitter"
+},
+"statistic": [
+    {
+        "id": "1",
+        "user_id": "40580714",
+        "date_checked": "2014-06-01",
+        "likes_count": null,
+        "followers_count": "785251",
+        "following_count": "0",
+        "tweets_count": 7897
+    },
+    {
+        "id": "5",
+        "user_id": "40580714",
+        "date_checked": "2014-06-01",
+        "likes_count": null,
+        "followers_count": "785251",
+        "following_count": "0",
+        "tweets_count": 7897
+    }
+]</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /user/statistic&amp;user_id={user_id}&amp;start_date={start_date}&amp;end_date={end_date}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/user/statistic&amp;user_id={user_id}&amp;start_date={start_date}&amp;end_date={end_date}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          
+        </section>              </div>                  <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">User Retweet Count</h2>                  
+                  <h3 class="nameMethod">Get Retweet count from particular Candidate and particular days back</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/user/retweet&amp;user_id={user_id}&amp;days={days}</h2>
+            <a class="resourcePermalink" href="#get-%2Fuser%2Fretweet%26user_id%3D%7Buser_id%7D%26days%3D%7Bdays%7D" name="get-/user/retweet&amp;user_id={user_id}&amp;days={days}"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                                <article class="details">
+                                          <div class="paramsTableWrap"><table class="paramsTable">
+                <caption>Parameters</caption>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                                      <tr>
+                      <td>user_id</td>
+                      <td><p>Numeric <code>user_id</code> of user of social media presidential candidates.</p>
+</td>
+                      <td>numeric, required<br>example: <samp>40580714</samp>                                              </td>
+                    </tr>
+                                      <tr>
+                      <td>days</td>
+                      <td><p>Numeric how many <code>days</code> back to get retweet count.</p>
+</td>
+                      <td>numeric, optional<br>example: <samp>2</samp>                                              </td>
+                    </tr>
+                                  </tbody>
+              </table></div>
+                          </article>
+                    <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS2E4">                                                      <script>
+window.docResources["generatedResourceCodeS2E4"] = (window.docResources["generatedResourceCodeS2E4"] || []).concat({
+  "url": "/user/retweet\u0026user_id={user_id}\u0026days={days}",
+  "method": "GET",
+  "headers": {},
+  "parameters": {
+    "user_id": "40580714",
+    "days": "2"
+  }
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    "user_id": "40580714",
+    "retweet_count": "41048",
+    "days": 15,
+    "_meta": {
+        "type": "retweet"
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /user/retweet&amp;user_id={user_id}&amp;days={days}"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/user/retweet&amp;user_id={user_id}&amp;days={days}" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+      <a name="hashtag"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Hashtag</h1>          <div class="details"><p>Hashtag related resources of the <strong>Post API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Hashtag Collection</h2>                  
+                  <h3 class="nameMethod">List of Hashtag that used for social media User or page of presidential candidates</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/hashtag</h2>
+            <a class="resourcePermalink" href="#get-%2Fhashtag" name="get-/hashtag"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                              <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS3E1">                                                      <script>
+window.docResources["generatedResourceCodeS3E1"] = (window.docResources["generatedResourceCodeS3E1"] || []).concat({
+  "url": "/hashtag",
+  "method": "GET",
+  "headers": {}
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    items: [
+        {
+            id: "18",
+            title: "DKI1"
+        },
+        {
+            id: "4",
+            title: "DukungPrabowoHatta"
+        },
+        {
+            id: "1",
+            title: "GarudadiDadaku"
+        },
+    ],
+    _links: {
+        self: {
+            href: "http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=hashtag&amp;page=1"
+        }
+    },
+    _meta: {
+        type: "hashtag",
+        totalCount: "20",
+        pageCount: 1,
+        currentPage: 1,
+        perPage: 50
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /hashtag"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/hashtag" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+      <a name="tag"></a>
+    <div class="chapterWrapper">
+              <hgroup class="chapter">
+          <h1>Tag</h1>          <div class="details"><p>Tag related resources of the <strong>Post API</strong></p></div>
+                  </hgroup>
+      
+                                            <div class="sameResourceGroup">
+        
+                  <h2 class="nameResource">Tag Collection</h2>                  
+                  <h3 class="nameMethod">List of Hashtag that used for social media User or page of presidential candidates</h3>
+        
+        <section class="resource noActivity">
+          <hgroup>
+            <h1 class="methodGet"><span>GET</span></h1>
+            <h2>/tag</h2>
+            <a class="resourcePermalink" href="#get-%2Ftag" name="get-/tag"><span> </span></a>
+            <div class="toggle"></div>
+                          <div class="commentsCount">
+                <a href="#" class="commentsCountLink">Add Comment</a>
+              </div>
+                      </hgroup>
+
+                              <div class="content">
+            <nav class="switch">
+              <ul>
+                <a href="#example" class="active"><li><span>Example</span></li></a>
+                                  <a href="#debugger"><li><span>Debugger</span></li></a>
+                                                  <a href="#social"><li><span>Comments</span></li></a>
+                                                  <a href="#tryit" class="jsTryitSwitcher"><li><span>Try It</span></li></a>
+                              </ul>
+            </nav>
+            <section class="example">
+                            <nav class="language">
+                <form name="languageSwitcher">
+                  <p>Show code sample</p>
+                  <select>
+                                          <option selected="selected" value="raw">none (raw data)</option>
+                                          <option value="curl">curl</option>
+                                          <option value="csharp">C#</option>
+                                          <option value="javascript">javascript</option>
+                                          <option value="nodejs">node.js</option>
+                                          <option value="python">python</option>
+                                          <option value="php">php</option>
+                                          <option value="ruby">ruby</option>
+                                          <option value="vb">Visual Basic</option>
+                                      </select>
+                </form>
+              </nav>
+                            <section class="code" id="generatedResourceCodeS4E1">                                                      <script>
+window.docResources["generatedResourceCodeS4E1"] = (window.docResources["generatedResourceCodeS4E1"] || []).concat({
+  "url": "/tag",
+  "method": "GET",
+  "headers": {}
+});
+</script>
+                                                                    <p class="ioDesc">Response</p>
+                  <section class="outgoingCall">
+                    <pre class="outgoing outgoingHeaders"><code>200 (OK)
+Content-Type: application/json</code></pre>
+                    <pre class="outgoing"><code class="language-javascript">{
+    items: [
+        {
+            id: "2",
+            title: "militer"
+        },
+        {
+            id: "1",
+            title: "pendidikan"
+        }
+    ],
+    _links: {
+        self: {
+            href: "http://api.pemiluapi.org/socmedpemilu?apiKey=7b532e4991f255b768a77dbd68915939&amp;r=hashtag%26page%3D1"
+        }
+    },
+    _meta: {
+        type: "hashtag",
+        totalCount: "2",
+        pageCount: 1,
+        currentPage: 1,
+        perPage: 50
+    }
+}</code></pre>
+                  </section>
+                                                                </section>
+            </section>
+                          <section class="debugger" data-resource-signature="GET /tag"></section>
+                            <section class="social">
+                <nav class="switch"></nav>
+
+                <section class="newPost">
+                  <form action="/discussion/538da4c3688fcd02000288a3" method="post">
+                     <textarea placeholder="Start a new thread…" name="comment"></textarea>
+                     <div class="postControl">
+                       <div class="postTools">
+                         <input class="button blue big" value="Submit" type="submit">
+                         <a class="cancel" href="#"><i class="icon-remove"></i> Cancel</a>
+                       </div>
+                     </div>
+                     <input name="url" value="/tag" type="hidden">
+                     <input name="method" value="GET" type="hidden">
+                  </form>
+                </section>
+
+                                <section class="all" name="thread">
+                                  </section>
+                              </section>
+              
+              <section class="tryit">
+                <form name="jsRunExample">
+                  <span class="ajaxLoader block jsEmptyTryit"></span>
+                </form>
+              </section>
+                      </div>
+
+          </section></div>
+              
+          </div>
+  
+<div id="fontSizeSwitch" title="Adjust Font Size"><ul class="layerOver"><li class="fontSizeItem fontSizeNormal active">a</li><li class="fontSizeItem fontSizeM">a</li><li class="fontSizeItem fontSizeL">a</li><li class="fontSizeItem fontSizeXL">a</li></ul></div></div>
+
+</div>
+
+<div class="loginOverlay overlay smallerPanel" style="display:none" id="loginPicker">
+  <div class="closeLayer"></div>
+  <div class="panelShadow">
+    <div class="panelLegacy">
+      <a href="#"><span class="block close"></span></a>
+      <form action="https://login.apiary.io//api/login" method="post" accept-charset="utf-8">
+        <div class="discusion">
+          <h1>Identify Yourself</h1>
+          <p>To proceed, please use credentials from one of the following services.</p>
+          <ul class="overlayLoginList">
+            <a href="https://github.com/login/oauth/authorize?client_id=f739c33cbd5c32296a43&amp;redirect_uri=https%3A%2F%2Flogin.apiary.io%2Fgithub%2Flogin%3Fdiscussion%3D1%26redirect%3Dhttp%253A%252F%252Fdocs.socmedpemilu.apiary.io%252Flogin%252Fcallback" data-type="github"><li>GitHub<img src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/arrowOfTime-e204e0dbfdab5e33.png" height="20" width="12"></li></a>
+            <a href="https://login.apiary.io/twitter/send_to_login?discussion=1&amp;redirect=http%3A%2F%2Fdocs.socmedpemilu.apiary.io%2Flogin%2Fcallback" data-type="twitter"><li>Twitter<img src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/arrowOfTime-e204e0dbfdab5e33.png" height="20" width="12"></li></a>
+            <a href="#" data-type="apiary"><li>apiary.io<img src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/arrowOfTime-e204e0dbfdab5e33.png" height="20" width="12"></li></a>
+          </ul>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="appLogin" style="display:none" class="loginOverlay overlay smallerPanel">
+  <div class="closeLayer"></div>
+  <div class="panelShadow">
+    <div class="panelLegacy">
+      <a href="#"><span class="block close"></span></a>
+      <form action="https://login.apiary.io/api/login?xhr_login=1" method="post" accept-charset="utf-8">
+        <img src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/apiary-io-beta-logo-1x-7a5112f76ac0f4de.png" height="30" width="160">
+        <ul id="loginUL">
+          <li>
+            <p><label for="username">Your e-mail</label></p>
+            <input class="textField" name="username" id="username" tabindex="1" type="text">
+          </li>
+          <li>
+            <p class="fieldDetails"><a href="https://login.apiary.io/password-recovery">Forgotten password</a></p>
+            <p><label for="password">Password</label></p>
+            <input class="textField" name="password" value="" id="password" tabindex="2" type="password">
+          </li>
+        </ul>
+        <p><input class="button small yellow" value="Sign In" tabindex="3" type="submit"></p>
+        <div class="adI">
+          <p>
+            Need an account?<br>
+            <a tabindex="4" href="https://login.apiary.io/register">Sign up now</a>.
+          </p>
+        </div>
+        <div class="clr"></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  
+</div>
+
+  <script>
+    window.config = {
+      "baseAjaxUrl": "http://docs.socmedpemilu.apiary.io/"
+    };
+  </script>
+
+  <script>
+    window.jsLoginUrl    = "https://login.apiary.io/login?discussion=1&xhr_login=1";
+    window.jsLoggedIn    = false;
+    window.trafficSecret = "";
+    window.runExampleIframeUrl = "http://socmedpemilu.apiary.io/___APIARY_INTERNAL___/docs/run-button";
+    window.tryItUrl    = "http://socmedpemilu.apiary.io";
+    window.mockserverUrl    = "http://socmedpemilu.apiary-mock.com";
+    window.loginUri      = "https://login.apiary.io/login";
+    window.baseDomain    = "apiary.io";
+    window.config.languages = {"raw":"none (raw data)","curl":"curl","csharp":"C#","javascript":"javascript","nodejs":"node.js","python":"python","php":"php","ruby":"ruby","vb":"Visual Basic"};
+    window.previewHelpers = window.previewHelpers || {};
+    window.previewHelpers.getContentTypeBrush = function (contentType) {
+    if ((contentType != null ? contentType.slice(-5) : void 0) === '+json') {
+      return 'language-javascript';
+    }
+    if ((contentType != null ? contentType.slice(-4) : void 0) === '+xml') {
+      return 'language-markup';
+    }
+    switch (contentType) {
+      case 'application/json':
+        return 'language-javascript';
+      case 'text/xml':
+        return 'language-markup';
+      case 'application/xml':
+        return 'language-markup';
+      default:
+        return '';
+    }
+  };
+    window.previewHelpers.apiUrl = window.previewHelpers.mockserverUrl = "http://socmedpemilu.apiary-mock.com";
+
+    window['examplesBundle'] = window['examplesBundle'] || function(data) {
+      if (data && data.root) {
+        $.getScript('https://apiary.a.ssl.fastly.net/assets/js/libs/ect-812663b24498f44e.js', function () {
+          window.config.ectRender = window.ECT({ 'watch': false, 'cache': true, 'root': data.root, 'ext': '.html' });
+          var expandedResource = $('section.resource.expanded section.code');
+          if (expandedResource.length > 0) {
+            window.renderExampleCodes(expandedResource);
+          }
+        });
+      }
+    };
+  </script>
+  <!-- uriTemplates expand support -->
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/uritemplate-c6f8656d13255c83.js"></script>
+  <!-- render-preview helpers -->
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/preview-6cc5d557a4e67784.js"></script>
+  <!-- vitalize documentation -->
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/docs-6d92b5ad424da228.js"></script>
+  <!-- templates in JSONP -->
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/examples.js"></script>
+  <!-- inspect traffic w/ ease -->
+  <script src="Social%20Media%20Pemilu%20API%E2%80%94by%20apiary.io_files/traffic-83f8d935b3a7b5b0.js" data-multipart-container=".resource .debugger[data-resource-signature=&quot;#{method} #{url}&quot;]"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-1', 'apiary.io');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 977730005;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://' : 'http://') + 'www.googleadservices.com/pagead/conversion.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+
+
+
+</body></html>
