@@ -1,0 +1,129 @@
+body {
+	background-color: #5EAE9E;
+	color: #4A9586;
+}
+
+#wrap {
+	/*position: relative;*/
+}
+
+#content {
+	position: relative;
+	/*width: 100%;*/
+	margin: 5px;
+	top: 55px;
+}
+
+#faq {
+	border-radius: 20px;
+	/*padding: 5px;*/
+	margin-bottom: 10px;
+	background-color: #CFE7E2;
+}
+
+#question {
+	padding: 5px;
+	font-weight: bolder;
+	background-color: #E7F3F1;
+}
+
+#answer {
+	padding: 5px;
+	/*background-color: #8DC7BB;*/
+}
+
+#hukum {
+	font-weight: bold;
+	font-size: 13;
+	padding: 5px;
+	/*background-color: #74BAAC;*/
+}
+
+#topbar {
+	z-index: 99;
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-family: Arial;
+}
+
+#topbar ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#topbar li{
+	width:16.66%;
+	height:50px;
+	float:left;
+	text-align:center;
+	overflow:hidden;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#topbar a{
+	color:#FFF;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#topbar p{
+	padding:0px 5px;
+}
+
+.subtext{
+	padding-top:15px;
+	color: #fff;
+}
+
+/*Menu Color Classes*/
+.dgray1{background:#4A9586;}
+.dblue1{background:#AAAAFF;}
+.lblue1{background:#BBDAFF;}
+.green1{background:#C0FF97;}
+.yellow1{background:#FFF284;}
+.purple1{background:#C4ABFE;}
+.pink1{background:#FFBBF7;}
+.dblue2{background: #BBBBFF;}
+.lblue2{background: #D0E6FF;}
+.green2{background: #D1FFB3;}
+.yellow2{background: #FFF7B7;}
+.purple2{background: #D0BCFE;}
+.pink2{background: #FFCAF9;}
+.white2{background: #FFFFFF;}
+
+
+.tooltip {
+	border-bottom: 1px dotted #FFF; color: #4A9586; outline: none;
+	cursor: help; text-decoration: none;
+	position: relative;
+}
+.tooltip span {
+	margin-left: -999em;
+	position: absolute;
+}
+.tooltip:hover span {
+	border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	position: absolute; left: 0; top: 20; z-index: 99;
+	margin-left: 0; width: 1000px;
+}
+.tooltip:hover img {
+	border: 0; margin: -10px 0 0 -55px;
+	float: left; position: absolute;
+}
+.tooltip:hover em {
+	font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+	display: block; padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.classic {background: #FFFFFF; }
+.critical { background: #FFFFFF; }
+.help { background: #FFFFFF; }
+.info { background: #FFFFFF; }
+.warning { background: #FFFFFF; }
