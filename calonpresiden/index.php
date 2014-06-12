@@ -15,6 +15,18 @@
 					<p class="subtext">Informasi mengenai capres</p>
 				</li>
 				<li class="dgray1">
+					<p><a href="../socmedpemilu">Social Analytics</a></p>
+					<p class="subtext">Analitik di sosial media</p>
+				</li>
+				<li class="dgray1">
+					<p><a href="../stamps">Stamps</a></p>
+					<p class="subtext">Gambar-gambar</p>
+				</li>
+				<li class="dgray1">
+					<p><a href="../campaignfinance">Keuangan Kampanye</a></p>
+					<p class="subtext">Data keuangan kampanye calon</p>
+				</li>
+				<li class="dgray1">
 					<p><a href="../laporan_pelanggaran">Laporan Pelanggaran</a></p>
 					<p class="subtext">Laporan pelanggaran kedua capres</p>
 				</li>
@@ -31,28 +43,31 @@
 					<p class="subtext">Pendidikan keduanya</p>
 				</li>
 				<li class="dgray1">
+					<p><a href="../berita">Berita</a></p>
+					<p class="subtext">Berita mengenai pemilu</p>
+				</li>
+				<li class="dgray1">
 					<p><a href="../about">Tentang Kami</a></p>
 					<p class="subtext">Pembuat aplikasi</p>
 				</li>
 			</ul>
 		</div>
 		<div id="content">
-			<div id="faq">
-				<?php
-				$url = 'http://api.pemiluapi.org/calonpresiden/api/caleg?apiKey=fea6f7d9ec0b31e256a673114792cb17';
-				$ch = curl_init($url);
-				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-				curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-					'Content-Type: application/json'
-					));	
-				$result = curl_exec ($ch);
-				curl_close ($ch); 
-				$arr = json_decode($result,true);
-				echo $result;
-				?>
-			</div>
+			<?php
+			$url = 'http://api.pemiluapi.org/calonpresiden/api/caleg?apiKey=fea6f7d9ec0b31e256a673114792cb17';
+			$ch = curl_init($url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+				'Content-Type: application/json'
+				));	
+			$result = curl_exec ($ch);
+			curl_close ($ch); 
+			$arr = json_decode($result,true);
+			echo $result;
+			?>
 		</div>
 	</div>
+
 </body>
 </html>

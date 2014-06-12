@@ -1,6 +1,10 @@
 <html>
 <head>
-	<title></title>
+	<title>Lentera-Vote</title>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<script src="../js/animated-menu.js"></script>
 </head>
 <body>
 	<a href="..">Kembali</a><br>

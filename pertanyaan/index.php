@@ -15,6 +15,18 @@
 					<p class="subtext">Informasi mengenai capres</p>
 				</li>
 				<li class="dgray1">
+					<p><a href="../socmedpemilu">Social Analytics</a></p>
+					<p class="subtext">Analitik di sosial media</p>
+				</li>
+				<li class="dgray1">
+					<p><a href="../stamps">Stamps</a></p>
+					<p class="subtext">Gambar-gambar</p>
+				</li>
+				<li class="dgray1">
+					<p><a href="../campaignfinance">Keuangan Kampanye</a></p>
+					<p class="subtext">Data keuangan kampanye calon</p>
+				</li>
+				<li class="dgray1">
 					<p><a href="../laporan_pelanggaran">Laporan Pelanggaran</a></p>
 					<p class="subtext">Laporan pelanggaran kedua capres</p>
 				</li>
@@ -29,6 +41,10 @@
 				<li class="dgray1">
 					<p><a href="../pendidikan">Pendidikan</a></p>
 					<p class="subtext">Pendidikan keduanya</p>
+				</li>
+				<li class="dgray1">
+					<p><a href="../berita">Berita</a></p>
+					<p class="subtext">Berita mengenai pemilu</p>
 				</li>
 				<li class="dgray1">
 					<p><a href="../about">Tentang Kami</a></p>

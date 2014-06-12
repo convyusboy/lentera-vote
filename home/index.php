@@ -1,11 +1,12 @@
 <html>
 <head>
 	<title>Lentera-Vote</title>
-	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/jquery.easing.1.3.js"></script>
 	<script src="../js/animated-menu.js"></script>
 </head>
+<!-- <body background="../img/flag.png"> -->
 <body>
 	<div id="wrap">
 		<div id="topbar">	
@@ -54,35 +55,8 @@
 		</div>
 		<div id="content">
 			<?php
-			$url = 'http://api.pemiluapi.org/berita?json=get_recent_posts&apiKey=fea6f7d9ec0b31e256a673114792cb17';
-			$ch = curl_init($url);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-			curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-				'Content-Type: application/json'
-				));	
-			$result = curl_exec ($ch);
-			curl_close ($ch); 
-			$arr = json_decode($result,true);
-			// echo $result;
-			foreach ($arr['posts'] as $q) {
-				?>
-				<div id="faq">
-					<div id="question"><?php echo $q['title'] ?></div>
-					<div id="answer">
-						<?php echo $q['content'] ?>
-					</div>
-					<div id="hukum"><a href="<?= $q['url']?>">
-					<!-- <div id="hukum"><a href="<?= $q['url']?>" class="tooltip"> -->
-						<?php echo $q['date'] ?>
-<!-- 						<span class="custom warning">
-						</span>
- -->					</a></div>
-					<br>
-				</div>
-				<?php
-			}
-
+				// $date = new Date();/
+				// echo $date;
 			?>
 		</div>
 	</div>

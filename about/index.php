@@ -53,37 +53,44 @@
 			</ul>
 		</div>
 		<div id="content">
-			<?php
-			$url = 'http://api.pemiluapi.org/berita?json=get_recent_posts&apiKey=fea6f7d9ec0b31e256a673114792cb17';
-			$ch = curl_init($url);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-			curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-				'Content-Type: application/json'
-				));	
-			$result = curl_exec ($ch);
-			curl_close ($ch); 
-			$arr = json_decode($result,true);
-			// echo $result;
-			foreach ($arr['posts'] as $q) {
-				?>
-				<div id="faq">
-					<div id="question"><?php echo $q['title'] ?></div>
-					<div id="answer">
-						<?php echo $q['content'] ?>
-					</div>
-					<div id="hukum"><a href="<?= $q['url']?>">
-					<!-- <div id="hukum"><a href="<?= $q['url']?>" class="tooltip"> -->
-						<?php echo $q['date'] ?>
-<!-- 						<span class="custom warning">
-						</span>
- -->					</a></div>
-					<br>
+			<div id="maker">
+				<div class="subtitle">Credits</div>
+				<div class="img">
+					<a target="blank" href="https://www.facebook.com/akbarisanto">
+						<img src="http://graph.facebook.com/1532451461/picture?type=large" width="100" height="100">
+					</a>
+					<div class="desc">Ridho Akbarisanto</div>
+					<div class="work">Developer</div>
 				</div>
-				<?php
-			}
-
-			?>
+				<div class="img">
+					<a  target="blank" href="https://www.facebook.com/evanbudianto">
+						<img src="http://graph.facebook.com/1532451461/picture?type=large" width="100" height="100">
+					</a>
+					<div class="desc">Evan Budianto</div>
+					<div class="work">Developer</div>
+				</div>
+				<div class="img">
+					<a  target="blank" href="https://www.facebook.com/danangarbansa">
+						<img src="http://graph.facebook.com/1532451461/picture?type=large" width="100" height="100">
+					</a>
+					<div class="desc">Danang Arbansa Nur</div>
+					<div class="work">Developer</div>
+				</div>
+				<div class="img">
+					<a target="blank"  href="https://www.facebook.com/yogi.agnia">
+						<img src="http://graph.facebook.com/1700162074/picture?type=large" width="100" height="100">
+					</a>
+					<div class="desc">Yogi Agnia Dwi Saputro</div>
+					<div class="work">Developer</div>
+				</div>
+				<div class="img">
+					<a  target="blank" href="https://www.facebook.com/senluph">
+						<img src="http://graph.facebook.com/1477615083/picture?type=large" width="100" height="100">
+					</a>
+					<div class="desc">M Sena Luphdika</div>
+					<div class="work">Developer</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
