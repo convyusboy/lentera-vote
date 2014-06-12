@@ -212,3 +212,41 @@ div.subtitle {
 	color: #FFF;
 	font-weight: bold;
 }
+
+div.socmed-group {
+	padding: 10px;
+	background-color: #8DC7BB;
+	position: relative;
+	left: 25%;
+	top: 100px;
+	color: #4A9586;
+	width: 600px;
+	height: 250px;
+	overflow: hidden;
+	font-size: 22px;
+}
+.socmed-group img {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+
+div#message {
+	margin: 5px;
+}
+
+#socmed {
+	float: right;
+	margin: 5px;
+}
+
+#created_at {
+	float: right;
+	margin: 5px;
+}
+
+#username {
+	float: right;
+	margin: 5px;
+}
+
